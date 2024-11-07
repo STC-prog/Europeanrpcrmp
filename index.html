@@ -16,6 +16,7 @@
                 <li><a href="#about">О проекте</a></li>
                 <li><a href="#join">Как играть</a></li>
                 <li><a href="#contact">Контакты</a></li>
+                <li><a href="URL_Форума" target="_blank">Форум</a></li>
             </ul>
         </nav>
     </header>
@@ -36,21 +37,19 @@
             <h2>Как начать играть</h2>
             <p>Чтобы начать играть, скачайте наш временный лаунчер и следуйте инструкциям:</p>
             <a href="https://drive.google.com/uc?export=download&id=1DkZY6XG-SzUabY_k3lqleqG3cmbUwiiy" download="launcher.zip">
-    <button>Скачать лаунчер</button>
-</a>
-
-                <p>Это неофициальный лаунчер, временная версия. Мы работаем над собственным лаунчером.</p>
-                <p>После скачивания запустите лаунчер, нажмите "Add server" и введите IP: 65.108.99.34:1265. Затем сохраните сервер и войдите под вашим ником.</p>
-            </div>
+                <button>Скачать лаунчер</button>
+            </a>
+            <p>Это неофициальный лаунчер, временная версия. Мы работаем над собственным лаунчером.</p>
+            <p>После скачивания запустите лаунчер, нажмите "Add server" и введите IP: 65.108.99.34:1265. Затем сохраните сервер и войдите под вашим ником.</p>
         </section>
 
         <section id="contact">
             <h2>Контакты и социальные сети</h2>
             <div class="social-icons">
                 <a href="https://vk.com" target="_blank"><img src="images-removebg-preview (1).png" alt="VK" /></a>
-                <a href="https://t.me/eurrrp" target="_blank"><img src="5968804.png" alt="Facebook" /></a>
-                <a href="https://www.tiktok.com/@european.rp?_t=8rAQleuDHs7&_r=1" target="_blank"><img src="tiktok.png" alt="Instagram" /></a>
-                <a href="h" target="_blank"><img src="discord-logo.png" alt="Twitter" /></a>
+                <a href="https://t.me/eurrrp" target="_blank"><img src="5968804.png" alt="Telegram" /></a>
+                <a href="https://www.tiktok.com/@european.rp?_t=8rAQleuDHs7&_r=1" target="_blank"><img src="tiktok.png" alt="TikTok" /></a>
+                <a href="URL_Discord" target="_blank"><img src="discord-logo.png" alt="Discord" /></a>
             </div>
         </section>
 
@@ -61,9 +60,13 @@
 
     <script>
         function downloadLauncher() {
-            document.getElementById("download-info").classList.remove("hidden");
-            // Здесь будет код для скачивания файла (например, window.location.href = "launcher.zip")
+            const filePath = "path/to/launcher.zip";
+            const link = document.createElement('a');
+            link.href = filePath;
+            link.download = "launcher.zip";
+            link.click();
         }
     </script>
 </body>
 </html>
+
