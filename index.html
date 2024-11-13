@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="Без_названия35-removebg-preview (1).png" alt="Логотип Black Europa" />
+            <img src="11zon_cropped (1).png" alt="Логотип Black Europa" />
         </div>
         <nav>
             <ul>
@@ -36,9 +36,14 @@
         <section id="join">
             <h2>Как начать играть</h2>
             <p>Чтобы начать играть, скачайте наш лаунчер и следуйте инструкциям:</p>
-            <a href="https://drive.google.com/uc?export=download&id=1DkZY6XG-SzUabY_k3lqleqG3cmbUwiiy" download="launcher.zip">
-                <button>Скачать лаунчер</button>
-            </a>
+            <div class="download-buttons">
+                <a href="https://drive.google.com/uc?export=download&id=1DkZY6XG-SzUabY_k3lqleqG3cmbUwiiy" download="launcher.zip">
+                    <button>Скачать лаунчер</button>
+                </a>
+                <a href="https://drive.google.com/uc?export=download&id=1DkZY6XG-SzUabY_k3lqleqG3cmbUwiiy" download="cache.zip">
+                    <button>Скачать кэш</button>
+                </a>
+            </div>
             <p>Лаунчер by Kranin. У вас скачивается zip файл, где будет кэш и лаунчер. Распаковываем кэш в основную память. После скачивания запустите лаунчер, нажмите "Настройки" и "Обновить игровой кэш". После этого измените IP: в Host пишем 65.108.99.34, а в Port - 2833. Готово! 🔥</p>
         </section>
 
@@ -63,6 +68,14 @@
             const link = document.createElement('a');
             link.href = filePath;
             link.download = "launcher.zip";
+            link.click();
+        }
+
+        function downloadCache() {
+            const filePath = "path/to/cache.zip";
+            const link = document.createElement('a');
+            link.href = filePath;
+            link.download = "cache.zip";
             link.click();
         }
     </script>
